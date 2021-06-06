@@ -9,10 +9,10 @@ public interface ToDoApp {
         System.out.println("Welcome!");
         handler.sendHelpMessage();
 
-        boolean mayContinue = true;
+        boolean mayContinue;
 
-        while (mayContinue) {
+        do {
             mayContinue = handler.handleConsole();
-        }
+        } while (mayContinue);
     }
 }
